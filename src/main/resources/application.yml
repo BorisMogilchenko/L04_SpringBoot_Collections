@@ -1,0 +1,23 @@
+################ CONFIGURATION HIBERNATE ################
+
+hibernate:
+  connection:
+    driver_class: org.h2.Driver
+    url: jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1
+    username: sa
+    password: sa 
+
+################ CONFIGURATION SPRING ################
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+cycle:
+  minRange: 0
+  maxRange: 999

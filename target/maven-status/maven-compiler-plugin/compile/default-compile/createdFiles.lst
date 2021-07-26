@@ -1,8 +1,0 @@
-ru\quazar\l04springboot\model\CustomList.class
-ru\quazar\l04springboot\ListBootApplication.class
-ru\quazar\l04springboot\service\CheckArgsService.class
-ru\quazar\l04springboot\service\MaximumClassService.class
-ru\quazar\l04springboot\service\CustomListService.class
-ru\quazar\l04springboot\controller\CustomListController.class
-ru\quazar\l04springboot\repository\CustomListRepository.class
-ru\quazar\l04springboot\service\MinimumClassService.class

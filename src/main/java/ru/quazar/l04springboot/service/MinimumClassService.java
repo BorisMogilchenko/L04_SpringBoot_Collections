@@ -26,7 +26,7 @@ public class MinimumClassService<T extends Comparable<T>> {
      * @return Element with minimum value
      */
 
-    @Autowired
+//    @Autowired
     public Integer minElement(CustomList<Integer> myList) {
         return (Integer) Collections.min(myList.getList());
     }

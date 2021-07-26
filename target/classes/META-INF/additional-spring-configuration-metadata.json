@@ -4,5 +4,15 @@
       "name": "hibernate.connection.driver_class",
       "type": "java.lang.String",
       "description": "Description for hibernate.connection.driver_class."
-  }
-] }
+    },
+    {
+      "name": "cycle.maxRange",
+      "type": "java.lang.String",
+      "description": "Description for cycle.maxRange."
+    },
+    {
+      "name": "cycle.maxRange",
+      "type": "java.lang.String",
+      "description": "Description for cycle.maxRange."
+    }
+  ] }

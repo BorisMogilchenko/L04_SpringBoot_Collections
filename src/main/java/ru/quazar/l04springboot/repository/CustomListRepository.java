@@ -12,5 +12,5 @@ import ru.quazar.l04springboot.model.CustomList;
  */
 
 @Repository
-public interface CustomListRepository extends JpaRepository<CustomList<Integer>, Long> {
+public interface CustomListRepository extends JpaRepository<CustomList, Long> {
 }

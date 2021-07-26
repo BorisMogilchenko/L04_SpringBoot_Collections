@@ -1,6 +1,7 @@
 package ru.quazar.l04springboot.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import ru.quazar.l04springboot.model.CustomList;
 import ru.quazar.l04springboot.repository.CustomListRepository;
@@ -20,7 +21,7 @@ import java.util.List;
  * @author  <A HREF="mailto:boris.mogilchenko@yandex.ru">Boris Mogilchenko</A>
  */
 
-@RestController
+@Controller
 public class CustomListController {
 
 /*    @Autowired

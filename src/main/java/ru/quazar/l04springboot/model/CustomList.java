@@ -1,7 +1,6 @@
 package ru.quazar.l04springboot.model;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -17,27 +16,34 @@ import java.util.List;
  */
 
 @Data
-@NoArgsConstructor
 @Entity
 public class CustomList<T extends Number> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private long id;
 
     @ManyToMany(targetEntity=CustomList.class)
 //    @Size(min=1, message="You must choose at least 1 ingredient")
 
     private List<T> list = new ArrayList<>();
 
-    public void add(T t) {
+    public CustomList() {
+    }
+
+    public CustomList(List< T > list) {
+        this.list = list;
+    }
+
+    public void addList(T t) {
         list.add(t);
     }
 
     @Override
-    public String toString() {
-        return String.format(
-                "CustomList[id=%d, list='%d']",
-                id, list);
+    public String toString( ) {
+        return "CustomList{" +
+                "id=" + id +
+                ", list=" + list +
+                '}';
     }
 }

@@ -1,0 +1,34 @@
+{
+  "groups": [
+    {
+      "name": "cycle",
+      "type": "ru.quazar.l04springboot.config.PropertiesConfig",
+      "sourceType": "ru.quazar.l04springboot.config.PropertiesConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cycle.max-range",
+      "type": "java.lang.Integer",
+      "sourceType": "ru.quazar.l04springboot.config.PropertiesConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "cycle.maxRange",
+      "type": "java.lang.String",
+      "description": "Description for cycle.maxRange."
+    },
+    {
+      "name": "cycle.min-range",
+      "type": "java.lang.Integer",
+      "sourceType": "ru.quazar.l04springboot.config.PropertiesConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "hibernate.connection.driver_class",
+      "type": "java.lang.String",
+      "description": "Description for hibernate.connection.driver_class."
+    }
+  ],
+  "hints": []
+}

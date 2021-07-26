@@ -1,7 +1,6 @@
 package ru.quazar.l04springboot.service;
 
 import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.quazar.l04springboot.model.CustomList;
 
@@ -26,7 +25,7 @@ import java.util.Collections;
  */
 public class MaximumClassService<T extends Comparable<T>> {
 
-    @Autowired
+//    @Autowired
     public Integer maxElement(CustomList<Integer> myList) {
         return (Integer) Collections.max(myList.getList());
     }
